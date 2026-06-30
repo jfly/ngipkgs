@@ -2,11 +2,11 @@ name: makemake
 
 permissions: {}
 
-on: { push: { branches: [ 'main' ] } }
+on: { push: { branches: [ 'main', 'hacking' ] } }
 
 jobs:
   deploy:
-    if: github.repository_owner == 'ngi-nix'
+    # <<< if: github.repository_owner == 'ngi-nix'
     environment: makemake
     runs-on: ubuntu-latest
     env:
